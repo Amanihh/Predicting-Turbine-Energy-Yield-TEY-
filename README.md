@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project applies and compares four unsupervised clustering algorithms on a high-dimensional chemical sensor dataset:
 
@@ -20,7 +20,7 @@ Each algorithm is evaluated and visualized in both the original feature space (p
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 **UCI Gas Sensor Array Drift Dataset** ([archive.ics.uci.edu/dataset/270](https://archive.ics.uci.edu/dataset/270/gas+sensor+array+drift+dataset))
 
@@ -39,7 +39,7 @@ batch, gas_label, gas_name, feature_1, feature_2, ..., feature_128
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 .
@@ -51,7 +51,7 @@ batch, gas_label, gas_name, feature_1, feature_2, ..., feature_128
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Language:** Python 3.11
 - **Environment:** Jupyter Notebook
@@ -69,7 +69,7 @@ batch, gas_label, gas_name, feature_1, feature_2, ..., feature_128
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 ```bash
 # 1. Clone the repository
@@ -94,7 +94,7 @@ Run the cells **top to bottom, in order**. A few cells were originally run out o
 
 ---
 
-## 🔍 Notebook Walkthrough
+##  Notebook Walkthrough
 
 **Section 1 — Imports**
 Loads pandas, numpy, matplotlib, seaborn, `sklearn.datasets`, and `missingno`.
@@ -127,7 +127,7 @@ Intended to summarize all four algorithms side by side across the three metrics,
 
 ---
 
-## 📈 Results (from the saved run)
+##  Results (from the saved run)
 
 **Baseline vs. graph/density methods:**
 
@@ -162,7 +162,7 @@ Intended to summarize all four algorithms side by side across the three metrics,
 
 ---
 
-## 📐 Evaluation Metrics
+##  Evaluation Metrics
 
 - **Silhouette Score** (−1 to 1, higher is better) — measures how well-separated and cohesive clusters are.
 - **Davies–Bouldin Index** (lower is better) — average similarity between each cluster and its most similar one; lower means better separation.
@@ -170,7 +170,7 @@ Intended to summarize all four algorithms side by side across the three metrics,
 
 ---
 
-## 🚧 Known Limitations / TODO
+##  Known Limitations / TODO
 
 - Affinity Propagation (Section 7) and the final cross-algorithm comparison (Section 8) are scaffolded but not executed/completed in the saved notebook.
 - The DBSCAN fitting cell's parameters (`eps=1.5, min_samples=60`) don't match the metrics captured immediately after it — re-run sequentially to resolve.
@@ -179,7 +179,7 @@ Intended to summarize all four algorithms side by side across the three metrics,
 
 ---
 
-## 🙏 References
+##  References
 
 - UCI Machine Learning Repository — [Gas Sensor Array Drift Dataset](https://archive.ics.uci.edu/dataset/270/gas+sensor+array+drift+dataset)
 - [scikit-learn documentation](https://scikit-learn.org/stable/)
